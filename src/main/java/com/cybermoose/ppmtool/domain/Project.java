@@ -1,6 +1,7 @@
 package com.cybermoose.ppmtool.domain;
 
 import javax.persistence.*;
+
 import java.util.Date;
 
 @Entity
@@ -74,7 +75,7 @@ public class Project {
         this.created_At = new Date();
     }
 
-    @PrePersist
+    @PreUpdate
     protected void onUpdate() {
         this.updated_At = new Date();
     }
