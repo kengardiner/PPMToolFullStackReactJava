@@ -70,8 +70,24 @@ public class Project {
         this.end_date = end_date;
     }
 
+    public Date getCreated_At() {
+        return created_At;
+    }
+
+    public void setCreated_At(Date created_At) {
+        this.created_At = created_At;
+    }
+
+    public Date getUpdated_At() {
+        return updated_At;
+    }
+
+    public void setUpdated_At(Date updated_At) {
+        this.updated_At = updated_At;
+    }
+
     @PrePersist
-    protected void onCreate () {
+    protected void onCreate() {
         this.created_At = new Date();
     }
 
